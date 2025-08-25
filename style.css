@@ -2,7 +2,13 @@ body {
 font-family: sans-serif;
 margin: 0;
 padding: 0;
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background: url("Diseño\ sin\ título\ \(1\).png") no-repeat center center fixed;
+background-size: cover;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center ;
 }
 
 .hero {
@@ -11,57 +17,71 @@ color: white;
 }
 
 #inicio {
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    color: #F5A627;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
-.menu{
-    position: relative;
+.p{
+    font-size: 30px;
+    margin-top: 0px;
+    font-weight: 200px;
+}
+
+.logo{
+font-family: "Oi", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.nav{
+    padding: 5px;
+    min-width: 55px;
+    position: sticky;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    overflow: hidden;
     align-items: center;
 }
 
-.nav-list{
-    display: block;
-    margin-left: 20px;
-    background-color: #764ba2;
+.nav__list{
     text-align: center;
-    align-content: center;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    transition: background-color 1s, width 1s, height 1s, box-shadow 1s;
-}
-
-.nav-list:hover{
-    background-color: #2848d8;
-    width: 105px;
-    height: 35px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__items{
+    display: inline-flex;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.nav__link{
+    display: block;
+    align-content: center;
     text-decoration: none;
-    color: aliceblue;
-}
-
-.cta-button{
-    border: none;
-    font-size: 18px;
-    background-color: #764ba2;
-    color: aliceblue;
-    width: 170px;
-    height: 40px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    background-color: #F8E963;
+    color: #6372F8;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
-    transition: box-shadow 1s, transform 2s;
+    transition: background-color 1s, transform 2s, box-shadow 1s, color 1s;
 }
 
-.cta-button:hover {
-transform: scale(1.05);
-box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.nav__link:hover{
+    background-color: #F89F63;
+    color: #F8E963;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
 }
