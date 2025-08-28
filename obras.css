@@ -63,6 +63,27 @@ font-style: normal;
     text-align: center;
 }
 
+h2{
+    font-family: "Neonderthaw", cursive;
+    font-size: 30px;
+}
+
+.block__text{
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 20px 20px 20px #00000068;
+    background-color: #F8E963;
+    margin: 30px;
+}
+
 .nav__link{
     display: block;
     align-content: center;
@@ -76,6 +97,7 @@ font-style: normal;
     width: 150px;
     height: 50px;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px #00000068;
     transition: background-color 1s, transform 2s, box-shadow 1s, color 1s;
 }
 
